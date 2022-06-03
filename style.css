@@ -20,11 +20,14 @@ body{
   margin: 0 auto;
   max-width: 1200px;
   min-height: 100vh;
+  
 }
-
+/* direct children of container with equal size */
 .container > div{
-  flex: 1;
-  padding: 0 20px;
+  
+   flex: 1;
+   padding: 0 20px;  
+  
 }
 
  h1{
@@ -55,26 +58,29 @@ body{
   margin: 0;
   
 }
+
 .form-control{
   /* display: none; */
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .form-control small{
   color: hsl(0, 100%, 74%) ;
   font-weight: 600;
   position: absolute;
-  bottom: -20px;
+  bottom: -24px;
   right: 0;
   opacity: 0;
   text-align: right;
 }
 .form-control small{
   opacity: 0;
-}
-.form-control.error small{
+} 
+
+ .form-control.error small{
   opacity: 1;
 }
+
 input{
   border-radius: 5px;
   border: 2px solid hsl(246, 25%, 77%);
@@ -100,14 +106,21 @@ input:focus{
   outline: none;
 }
 
-.form-control img{
+/* .form-control img{
   opacity: 0;
   position: absolute;
   top: 15px;
   right: 15px;
   height: 20px;
+} */
+.form-control img {
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	height: 20px;
 }
-
 .form-control.error img{
   opacity: 1;
 }
@@ -133,9 +146,7 @@ button{
 }
 
 button:focus{
-
   outline: none;
-
 }
 
 button:active{
@@ -157,7 +168,7 @@ small a{
   text-decoration: none;
 }
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   h1{
     text-align: center;
@@ -169,6 +180,7 @@ small a{
 
   .container{
     flex-direction: column;
+    
   }
   
 }
