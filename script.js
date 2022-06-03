@@ -40,9 +40,10 @@ addErrorTo('password', 'Pasword is required')
 
 function addErrorTo(field, message){
 
+
   const formControl = form[field].parentNode;
 
-  formControl.classList.add('error')
+  formControl.classList.add('error');
 
   const small = formControl.querySelector('small');
 
@@ -55,8 +56,9 @@ function removeErrorFrom(field){
 
   const formControl = form[field].parentNode;
 
-  formControl.classList.remove('error')
-  const small = form[field].parentNode.querySelector('small');
+  formControl.classList.remove('error');
+  
+  const small = formControl.querySelector('small');
 
   small.style.opacity = '0';
 
