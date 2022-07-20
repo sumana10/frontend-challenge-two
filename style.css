@@ -3,6 +3,7 @@
 *{
   box-sizing: border-box
 }
+/* padding and border included in the width */
 
 body{
   background-color:  hsl(0, 100%, 74%);
@@ -14,6 +15,7 @@ body{
 .container{
   display: flex;
   flex-wrap: wrap;
+  /* on mobile it will stack */
   align-items: center;
   justify-content: center;
   /* on mobile it'll stack */
@@ -131,8 +133,9 @@ button{
   border:none;
   color: #fff;
   cursor: pointer;
-  border: 1px solid hsl(154, 59%, 45%);
-  box-shadow: 0 2px solid hsl(154, 59%, 45%);
+  border: 1px solid hsl(154, 59%, 40%);
+  box-shadow: 0 2px solid hsl(154, 59%, 40%);
+  
   font-family: 'Poppins', 'sans-serif';
   font-weight: 500;
   font-size: 14px;
